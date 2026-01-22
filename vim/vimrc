@@ -1,0 +1,13 @@
+set number              " 显示行号
+set relativenumber      " 显示相对行号
+set cursorline          " 高亮当前行
+syntax on               " 开启语法高亮
+
+" 进入插入模式时变为条形 (Beam)
+let &t_SI = "\e[6 q"
+
+" 进入替换模式时变为下划线 (Underline)
+let &t_SR = "\e[3 q"
+
+" 回到普通模式时恢复块状 (Block)
+let &t_EI = "\e[1 q"
